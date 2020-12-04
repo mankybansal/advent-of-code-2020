@@ -3,7 +3,7 @@ Lines = file.readlines()
 
 input = [[]]
 
-fields = sorted(['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'])
+fields = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
 
 count = 0
 for line in Lines:
