@@ -2,7 +2,7 @@ input = []
 for line in open('input.txt', 'r').readlines():
 	input.append(line.strip())
 
-highest, seats = 0, {}
+seats = {}
 
 for ticket in input:
 	t, b, l, r = 0, 127, 0, 7
