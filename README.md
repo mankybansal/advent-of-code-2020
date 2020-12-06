@@ -27,3 +27,8 @@ Part II - Done
 Part I - Done
 
 Part II - Done
+
+#### Problem 6
+Part I - Done
+
+Part II - Done
