@@ -38,5 +38,4 @@ for key in ad_list.keys():
 			for new_key in ad_list[cur_key[1:]]:
 				queue.append(new_key)
 
-print(ad_list['shinygold'])
 print(len(answers))
