@@ -21,7 +21,6 @@ for line in open('input.txt', 'r').readlines():
 			key = (number_key, split_rule[1] + split_rule[2])
 			ad_list[master_key].append(key)
 
-answers = []
 for key in ad_list.keys():
 	visited = [key]
 	queue = []
@@ -34,18 +33,19 @@ for key in ad_list.keys():
 		if cur_key[1:] in visited:
 			continue
 		visited.append(cur_key[1:])
-		if cur_key[1:] == 'shinygold':
-			answers.append(key)
 
 		if cur_key[1:] in ad_list:
 			for new_key in ad_list[cur_key[1:]]:
 				queue.append(new_key)
 
-queue = ad_list['shinygold']
+
+def recurse(key):
+	if key == 'otherbags':
+		return 0
+	total = 0
+	for q_num, q_key in ad_list[key]:
+		total += (q_num * recurse(q_key)) + q_num
+	return total
 
 
-for i in range(len(queue)):
-	key = queue[i][1]
-	queue[i] = (queue[i][0], ad_list[queue[i][1]])
-print(queue)
-
+print(recurse('shinygold'))
