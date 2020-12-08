@@ -2,7 +2,6 @@ ad_list = {}
 
 for line in open('input.txt', 'r').readlines():
 	rules = line.strip().replace('.', '').replace('contain', '').replace(',', ' ').split('  ')
-
 	master_key = None
 	for i in range(len(rules)):
 		if i == 0:

@@ -4,31 +4,33 @@
 
 
 #### Problem 1
-Part I - Done
-
-Part II - Done
+- [x] Part I - Done
+- [x] Part II - Done
 
 #### Problem 2
-Part I - Done
-
-Part II - Done
+- [x] Part I - Done
+- [x] Part II - Done
 
 #### Problem 3
-Part I - Done
-
-Part II - Done
+- [x] Part I - Done
+- [x] Part II - Done
 
 #### Problem 4
-Part I - Done
-
-Part II - Done
+- [x] Part I - Done
+- [x] Part II - Done
 
 #### Problem 5
-Part I - Done
-
-Part II - Done
+- [x] Part I - Done
+- [x] Part II - Done
 
 #### Problem 6
-Part I - Done
+- [x] Part I - Done
+- [x] Part II - Done
 
-Part II - Done
+#### Problem 7
+- [x] Part I - Done
+- [x] Part II - Done
+
+#### Problem 8
+- [x] Part I - Done
+- [x] Part II - Done
