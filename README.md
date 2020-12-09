@@ -34,3 +34,11 @@
 #### Problem 8
 - [x] Part I - Done
 - [x] Part II - Done
+
+#### Problem 9
+- [x] Part I - Done
+- [x] Part II - Done
+
+#### Problem 10
+- [x] Part I - Done
+- [x] Part II - Done
