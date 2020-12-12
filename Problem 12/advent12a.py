@@ -10,13 +10,6 @@ directions = {
 	'N': [0, 1],
 }
 
-
-def rotate(action, value, direction):
-	idx = [*directions].index(direction)
-	idx += (-1 if action == 'L' else 1) * (value // 90)
-	return [*directions][idx % 4]
-
-
 direction = 'E'
 x, y = 0, 0
 
@@ -25,7 +18,9 @@ for action, value in instructions:
 		x += directions[action][0] * value
 		y += directions[action][1] * value
 	elif action in ['L', 'R']:
-		direction = rotate(action, value, direction)
+		idx = [*directions].index(direction)
+		idx += (-1 if action == 'L' else 1) * (value // 90)
+		direction = [*directions][idx % 4]
 	elif action == 'F':
 		x += directions[direction][0] * value
 		y += directions[direction][1] * value
