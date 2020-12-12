@@ -1,33 +1,33 @@
-directions = []
+instructions = []
 for line in open('input.txt', 'r').readlines():
 	readline = line.strip()
-	directions.append((readline[0], int(readline[1:])))
+	instructions.append((readline[0], int(readline[1:])))
 
-compass = ['E', 'S', 'W', 'N']
-direction = 0
-x, y = 0, 0
-
-direction_map = {
-	'N': [0, 1],
-	'S': [0, -1],
+directions = {
 	'E': [1, 0],
+	'S': [0, -1],
 	'W': [-1, 0],
+	'N': [0, 1],
 }
 
 
-def rotate(d, n, direction):
-	direction += (- n // 90) if d == 'L' else n // 90
-	return direction % 4
+def rotate(action, value, direction):
+	idx = [*directions].index(direction)
+	idx += (-1 if action == 'L' else 1) * (value // 90)
+	return [*directions][idx % 4]
 
 
-for d, n in directions:
-	if d in ['N', 'S', 'E', 'W']:
-		x += direction_map[d][0] * n
-		y += direction_map[d][1] * n
-	elif d in ['L', 'R']:
-		direction = rotate(d, n, direction)
-	elif d == 'F':
-		x += direction_map[compass[direction]][0] * n
-		y += direction_map[compass[direction]][1] * n
+direction = 'E'
+x, y = 0, 0
+
+for action, value in instructions:
+	if action in [*directions]:
+		x += directions[action][0] * value
+		y += directions[action][1] * value
+	elif action in ['L', 'R']:
+		direction = rotate(action, value, direction)
+	elif action == 'F':
+		x += directions[direction][0] * value
+		y += directions[direction][1] * value
 
 print(abs(x) + abs(y))
