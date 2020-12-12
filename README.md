@@ -46,3 +46,7 @@
 #### Problem 11
 - [x] Part I - Done
 - [x] Part II - Done
+
+#### Problem 12
+- [x] Part I - Done
+- [x] Part II - Done
