@@ -5,8 +5,7 @@ def apply_mask(mask, num):
 	return num
 
 
-cur_mask = None
-memory = {}
+cur_mask, memory, answer = None, {}, 0
 for line in open('input.txt', 'r').readlines():
 	instruction = line.strip()
 	if 'mask' in instruction:
@@ -17,7 +16,6 @@ for line in open('input.txt', 'r').readlines():
 		bin_num = '{:036b}'.format(int(inst[1]))
 		memory[address] = ''.join(apply_mask(cur_mask, bin_num))
 
-answer = 0
 for mem, val in memory.items():
 	answer += int(val, 2)
 print(answer)
