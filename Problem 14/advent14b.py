@@ -13,7 +13,7 @@ for line in open('input.txt', 'r').readlines():
 		mask = val
 	elif 'mem' in inst:
 		mem_add = '{:036b}'.format(int(inst[4:-1]))
-		masked_mem_add = ''.join([mask[i] if mask[i] in ['1', 'X'] else mem_add[i] for i in range(36)])
+		masked_mem_add = [mask[i] if mask[i] in ['1', 'X'] else mem_add[i] for i in range(36)]
 		for address in combinations(masked_mem_add):
 			memory[address] = int(val)
 print(sum(memory.values()))
