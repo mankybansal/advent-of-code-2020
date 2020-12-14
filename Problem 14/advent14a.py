@@ -1,7 +1,7 @@
 def apply_mask(mask, num):
 	num = list(num)
-	for i in reversed(range(36)):
-		num[i] = '1' if mask[i] == '1' else '0' if mask[i] == '0' else num[i]
+	for i in range(len(num)):
+		num[i] = mask[i] if mask[i] in ['1', '0'] else num[i]
 	return num
 
 
