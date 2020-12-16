@@ -17,6 +17,5 @@ for ticket in nearby_tickets:
 			if r1_min <= value <= r1_max or r2_min <= value <= r2_max:
 				is_valid = True
 				break
-		if not is_valid:
-			bad_values.append(value)
+		bad_values += [value] if not is_valid else []
 print(sum(bad_values))
