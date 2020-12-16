@@ -66,3 +66,11 @@
 #### Problem 16
 - [x] Part I
 - [x] Part II
+
+#### Problem 17
+- [ ] Part I
+- [ ] Part II
+
+#### Problem 18
+- [ ] Part I
+- [ ] Part II

@@ -1,19 +1,15 @@
 from collections import defaultdict
 
-lines, line_i = open('input.txt', 'r').readlines(), 0
+lines, line_i = [l.strip() for l in open('input.txt', 'r').readlines()], 0
 rules = []
-for line_i in range(line_i, len(lines)):
-	if lines[line_i].strip() == '':
+for line_i, line in enumerate(lines):
+	if not line:
 		break
-	rule_name, range_string = lines[line_i].strip().replace(' ', '').split(':')
-	ranges = [list(map(int, x.split('-'))) for x in range_string.split('or')]
-	rules.append((rule_name, ranges[0], ranges[1]))
-
+	r_name, r_range = line.replace(' ', '').split(':')
+	r1, r2 = [list(map(int, x.split('-'))) for x in r_range.split('or')]
+	rules.append((r_name, r1, r2))
 my_ticket = list(map(int, lines[line_i + 2].strip().split(',')))
-
-nearby_tickets = []
-for line_i in range(line_i + 5, len(lines)):
-	nearby_tickets.append(list(map(int, lines[line_i].strip().split(','))))
+nearby_tickets = [list(map(int, l.split(','))) for l in lines[line_i + 5:]]
 
 valid_tickets = []
 for ticket in nearby_tickets:
