@@ -17,8 +17,8 @@ bad_values = []
 for ticket in nearby_tickets:
 	for value in ticket:
 		is_valid = False
-		for _, range1, range2 in rules:
-			if range1[0] <= value <= range1[1] or range2[0] <= value <= range2[1]:
+		for _, (r1_min, r1_max), (r2_min, r2_max) in rules:
+			if r1_min <= value <= r1_max or r2_min <= value <= r2_max:
 				is_valid = True
 				break
 		if not is_valid:

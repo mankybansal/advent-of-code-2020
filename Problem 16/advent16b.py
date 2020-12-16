@@ -20,8 +20,8 @@ for ticket in nearby_tickets:
 	is_valid = True
 	for value in ticket:
 		is_value_valid = False
-		for _, range1, range2 in rules:
-			if range1[0] <= value <= range1[1] or range2[0] <= value <= range2[1]:
+		for _, (r1_min, r1_max), (r2_min, r2_max) in rules:
+			if r1_min <= value <= r1_max or r2_min <= value <= r2_max:
 				is_value_valid = True
 				break
 		if not is_value_valid:
@@ -33,28 +33,27 @@ for ticket in nearby_tickets:
 answers = defaultdict(list)
 for i in range(len(valid_tickets[0])):
 	values = [valid_tickets[j][i] for j in range(len(valid_tickets))]
-	for k, rule in enumerate(rules):
-		_, range1, range2 = rule
+	for rule_name, (r1_min, r1_max), (r2_min, r2_max) in rules:
 		is_valid_rule = True
 		for value in values:
-			if not range1[0] <= value <= range1[1] and not range2[0] <= value <= range2[1]:
+			if not r1_min <= value <= r1_max and not r2_min <= value <= r2_max:
 				is_valid_rule = False
 		if is_valid_rule:
-			answers[i].append(k)
+			answers[i].append(rule_name)
 sorted_keys = sorted(answers, key=lambda x: len(answers[x]))
 
 
 def assign_columns(i=0, stack=[]):
 	if i == 20 and len(set(stack)) == 20:
 		answer = 1
-		for j in range(len(stack)):
-			if 'departure' in rules[stack[j]][0]:
+		for j, rule_name in enumerate(stack):
+			if 'departure' in rule_name:
 				answer *= my_ticket[sorted_keys[j]]
 		print(answer)
 		return
-	for rule_num in answers[sorted_keys[i]]:
-		if rule_num not in stack:
-			assign_columns(i + 1, stack[:] + [rule_num])
+	for rule_name in answers[sorted_keys[i]]:
+		if rule_name not in stack:
+			assign_columns(i + 1, stack[:] + [rule_name])
 
 
 assign_columns()
