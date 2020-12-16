@@ -36,24 +36,23 @@ for i in range(len(valid_tickets[0])):
 	for rule_name, (r1_min, r1_max), (r2_min, r2_max) in rules:
 		is_valid_rule = True
 		for value in values:
-			if not r1_min <= value <= r1_max and not r2_min <= value <= r2_max:
+			if not (r1_min <= value <= r1_max or r2_min <= value <= r2_max):
 				is_valid_rule = False
 		if is_valid_rule:
 			answers[i].append(rule_name)
 sorted_keys = sorted(answers, key=lambda x: len(answers[x]))
 
 
-def assign_columns(i=0, stack=[]):
-	if i == 20 and len(set(stack)) == 20:
+def assign_rules(i=0, stack=[]):
+	if i == 20:
 		answer = 1
 		for j, rule_name in enumerate(stack):
-			if 'departure' in rule_name:
-				answer *= my_ticket[sorted_keys[j]]
+			answer *= my_ticket[sorted_keys[j]] if 'departure' in rule_name else 1
 		print(answer)
 		return
 	for rule_name in answers[sorted_keys[i]]:
 		if rule_name not in stack:
-			assign_columns(i + 1, stack[:] + [rule_name])
+			assign_rules(i + 1, stack[:] + [rule_name])
 
 
-assign_columns()
+assign_rules()
