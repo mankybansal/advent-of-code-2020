@@ -3,74 +3,52 @@
 ### Advent of Code 2020 Solutions
 
 
-#### Problem 1
-- [x] Part I
-- [x] Part II
+#### Problem 01  :star::star:
 
-#### Problem 2
-- [x] Part I
-- [x] Part II
+#### Problem 02  :star::star:
 
-#### Problem 3
-- [x] Part I
-- [x] Part II
+#### Problem 03  :star::star:
 
-#### Problem 4
-- [x] Part I
-- [x] Part II
+#### Problem 04  :star::star:
 
-#### Problem 5
-- [x] Part I
-- [x] Part II
+#### Problem 05  :star::star:
 
-#### Problem 6
-- [x] Part I
-- [x] Part II
+#### Problem 06  :star::star:
 
-#### Problem 7
-- [x] Part I
-- [x] Part II
+#### Problem 07  :star::star:
 
-#### Problem 8
-- [x] Part I
-- [x] Part II
+#### Problem 08  :star::star:
 
-#### Problem 9
-- [x] Part I
-- [x] Part II
+#### Problem 09  :star::star:
 
-#### Problem 10
-- [x] Part I
-- [x] Part II
+#### Problem 10 :star::star:
 
-#### Problem 11
-- [x] Part I
-- [x] Part II
+#### Problem 11 :star::star:
 
-#### Problem 12
-- [x] Part I
-- [x] Part II
+#### Problem 12 :star::star:
 
-#### Problem 13
-- [x] Part I
-- [x] Part II
+#### Problem 13 :star::star:
 
-#### Problem 14
-- [x] Part I
-- [x] Part II
+#### Problem 14 :star::star:
 
-#### Problem 15
-- [x] Part I
-- [x] Part II
+#### Problem 15 :star::star:
 
-#### Problem 16
-- [x] Part I
-- [x] Part II
+#### Problem 16 :star::star:
 
-#### Problem 17
-- [x] Part I
-- [x] Part II
+#### Problem 17 :star::star:
 
 #### Problem 18
-- [ ] Part I
-- [ ] Part II
+
+#### Problem 19
+
+#### Problem 20
+
+#### Problem 21
+
+#### Problem 22
+
+#### Problem 23
+
+#### Problem 24
+
+#### Problem 25
