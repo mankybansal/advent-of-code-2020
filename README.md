@@ -68,8 +68,8 @@
 - [x] Part II
 
 #### Problem 17
-- [ ] Part I
-- [ ] Part II
+- [x] Part I
+- [x] Part II
 
 #### Problem 18
 - [ ] Part I
