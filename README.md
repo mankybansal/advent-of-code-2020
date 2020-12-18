@@ -19,7 +19,7 @@
 #### ``Problem 15`` :star::star:
 #### ``Problem 16`` :star::star:
 #### ``Problem 17`` :star::star:
-#### ``Problem 18``
+#### ``Problem 18`` :star::star:
 #### ``Problem 19``
 #### ``Problem 20``
 #### ``Problem 21``
