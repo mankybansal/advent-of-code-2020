@@ -19,8 +19,4 @@ while len(p1) > 0 and len(p2) > 0:
 		p2 += [p2_card, p1_card]
 
 winner = p1 if len(p1) > 0 else p2
-
-answer = 0
-for i, card in enumerate(winner):
-	answer += (len(winner) - i) * card
-print(answer)
+print(sum([(len(winner) - i) * card for i, card in enumerate(winner)]))

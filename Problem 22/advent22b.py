@@ -37,8 +37,4 @@ def determine_winner(p1, p2):
 
 p1, p2 = determine_winner(p1, p2)
 winner = p1 if len(p1) > 0 else p2
-
-answer = 0
-for i, card in enumerate(winner):
-	answer += (len(winner) - i) * card
-print(answer)
+print(sum([(len(winner) - i) * card for i, card in enumerate(winner)]))
