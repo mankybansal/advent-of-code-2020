@@ -20,10 +20,10 @@
 #### ``Problem 16`` :star::star:
 #### ``Problem 17`` :star::star:
 #### ``Problem 18`` :star::star:
-#### ``Problem 19``
-#### ``Problem 20``
-#### ``Problem 21``
-#### ``Problem 22``
+#### ``Problem 19`` :star::star:
+#### ``Problem 20`` :star::star:
+#### ``Problem 21`` :star::star:
+#### ``Problem 22`` :star::star:
 #### ``Problem 23``
 #### ``Problem 24``
 #### ``Problem 25``
