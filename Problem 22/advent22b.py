@@ -2,12 +2,9 @@ lines = [l.strip() for l in open('input.txt', 'r').readlines()]
 
 p1, p2, first_player = [], [], True
 for line in lines:
-	if not line:
-		continue
-	if 'Player 1' in line:
-		continue
 	if 'Player 2' in line:
 		first_player = False
+	if not line or 'Player' in line:
 		continue
 	if first_player:
 		p1.append(int(line))
