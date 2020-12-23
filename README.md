@@ -24,6 +24,6 @@
 #### ``Problem 20`` :star::star:
 #### ``Problem 21`` :star::star:
 #### ``Problem 22`` :star::star:
-#### ``Problem 23``
+#### ``Problem 23`` :star::star:
 #### ``Problem 24``
 #### ``Problem 25``
