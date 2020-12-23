@@ -1,5 +1,4 @@
-# advent-of-code-20
-## Advent of Code 2020 Submissions
+# advent-of-code-2020
 
 
 |Day |    Stars   | (P1) Time  |   Rank   | (P2) Time |   Rank |
@@ -28,15 +27,16 @@
 |  2 |:star::star:|  04:43:47  | 24,718   |  04:47:10 | 22,709 |
 |  1 |:star::star:|  18:54:20  | 67,052   |  18:58:14 | 62,309 |
 
+### Interesting Stats
 
-N = 154,162
+#### Problem 1
+    Highest Rank:   731/154,162 (Top 0.5%) (All)
+    Average Rank: 8,816/154,162 (Top 5.7%) (All)
+    Average Rank: 3,348/154,162 (Top 2.2%) (Excluding Late Starts)
+    Median  Rank: 3,569/154,162 (Top 2.3%)
 
-#### P1
-    Highest Rank:   731/N
-    Average Rank: 8,816/N
-    Median  Rank: 3,569/N
-
-#### P2
-    Highest Rank:   311/N
-    Average Rank: 7,889/N
-    Median  Rank: 3,427/N
+#### Problem 2
+    Highest Rank:   311/154,162 (Top 0.2%) (All)
+    Average Rank: 7,889/154,162 (Top 5.1%) (All)
+    Average Rank: 3,050/154,162 (Top 2.0%) (Excluding Late Starts)
+    Median  Rank: 3,427/154,162 (Top 2.2%) (All)
