@@ -1,29 +1,42 @@
-# advent-of-code-2020
+# advent-of-code-20
+## Advent of Code 2020 Submissions
 
-### Advent of Code 2020 Solutions
 
-#### ``Problem 01`` :star::star:
-#### ``Problem 02`` :star::star:
-#### ``Problem 03`` :star::star:
-#### ``Problem 04`` :star::star:
-#### ``Problem 05`` :star::star:
-#### ``Problem 06`` :star::star:
-#### ``Problem 07`` :star::star:
-#### ``Problem 08`` :star::star:
-#### ``Problem 09`` :star::star:
-#### ``Problem 10`` :star::star:
-#### ``Problem 11`` :star::star:
-#### ``Problem 12`` :star::star:
-#### ``Problem 13`` :star::star:
-#### ``Problem 14`` :star::star:
-#### ``Problem 15`` :star::star:
-#### ``Problem 16`` :star::star:
-#### ``Problem 17`` :star::star:
-#### ``Problem 18`` :star::star:
-#### ``Problem 19`` :star::star:
-#### ``Problem 20`` :star::star:
-#### ``Problem 21`` :star::star:
-#### ``Problem 22`` :star::star:
-#### ``Problem 23`` :star::star:
-#### ``Problem 24``
-#### ``Problem 25``
+|Day |    Stars   | (P1) Time  |   Rank   | (P2) Time |   Rank |
+|---:|    :---:   |       ---: |    ---:  |      ---: |   ---: |
+| 23 |:star::star:|  03:13:06  |  4,771   |  04:53:02 |  3,150 |
+| 22 |:star::star:|  00:38:09  |  3,588   |  01:05:12 |  1,864 |
+| 21 |:star::star:|  01:30:15  |  2,956   |  01:33:55 |  2,699 |
+| 20 |:star::star:|  22:47:40  | 11,892   |      >24h |  6,854 |
+| 19 |:star::star:|  16:29:35  | 12,409   |  16:32:56 |  9,206 |
+| 18 |:star::star:|  00:20:15  |    731   |  00:21:57 |    311 |
+| 17 |:star::star:|  01:21:05  |  3,427   |  01:55:11 |  3,801 |
+| 16 |:star::star:|  00:17:03  |  1,512   |  00:56:34 |  1,656 |
+| 15 |:star::star:|  00:27:16  |  3,144   |  00:34:43 |  2,309 |
+| 14 |:star::star:|  00:20:01  |  1,535   |  00:51:19 |  1,841 |
+| 13 |:star::star:|  00:12:33  |  2,562   |  00:44:45 |    966 |
+| 12 |:star::star:|  00:20:39  |  2,885   |  00:56:29 |  3,688 |
+| 11 |:star::star:|  00:34:46  |  2,864   |  01:40:12 |  4,972 |
+| 10 |:star::star:|  00:13:21  |  3,728   |  01:00:26 |  3,297 |
+|  9 |:star::star:|  00:10:47  |  2,431   |  00:18:38 |  2,013 |
+|  8 |:star::star:|  01:29:29  | 10,999   |  01:49:28 |  9,249 |
+|  7 |:star::star:|  03:33:15  | 12,848   |  05:12:51 | 13,270 |
+|  6 |:star::star:|  03:26:37  | 16,920   |  03:30:35 | 15,251 |
+|  5 |:star::star:|  00:16:53  |  2,907   |  00:20:44 |  2,314 |
+|  4 |:star::star:|  00:14:12  |  2,589   |  00:52:41 |  3,569 |
+|  3 |:star::star:|  00:17:40  |  4,303   |  00:26:15 |  4,165 |
+|  2 |:star::star:|  04:43:47  | 24,718   |  04:47:10 | 22,709 |
+|  1 |:star::star:|  18:54:20  | 67,052   |  18:58:14 | 62,309 |
+
+
+N = 154,162
+
+#### P1
+    Highest Rank:   731/N
+    Average Rank: 8,816/N
+    Median  Rank: 3,569/N
+
+#### P2
+    Highest Rank:   311/N
+    Average Rank: 7,889/N
+    Median  Rank: 3,427/N
